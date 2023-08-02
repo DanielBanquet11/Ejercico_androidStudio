@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Dani App</string>
+    <string name="nombres">Nombres</string>
+    <string name="nombres2">Nombres2"</string>
+    <string name="BotonEnviar">liquidar</string>
+    <string name="apellidos">apellidos</string>
+    <string name="apellidos2">apellidos</string>
+    <string name="cargo">cargo</string>
+    <string name="cargo2">cargo</string>
+    <string name="SueldoB">Sueldo</string>
+    <string name="SueldoB2">Sueldo</string>
+    <string name="DiasL">Dias</string>
+    <string name="DiasL2">Dias</string>
+    <string name="BotonSalir">Salir</string>
+
+
+
+
+
+
+
+
+</resources>
