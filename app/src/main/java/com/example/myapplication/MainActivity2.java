@@ -55,12 +55,19 @@ public class MainActivity2 extends AppCompatActivity {
 
         if (descuento) {
             porcentajeDescuento +=  3;
+
+            double descuento_ = sueldoInicial * 0.03;
+            i.putExtra("descuento",descuento_);
         }
         if (salud) {
             porcentajeDescuento += 4;
+            double salud_ = sueldoInicial * 0.04;
+            i.putExtra("salud",salud_);
         }
         if (pension) {
             porcentajeDescuento += 4;
+            double pension_ = sueldoInicial * 0.04;
+            i.putExtra("pension",pension_);
         }
 
         // calcular descuento total

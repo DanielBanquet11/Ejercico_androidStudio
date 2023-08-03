@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Dani App</string>
     <string name="nombres">Nombres</string>
-    <string name="nombres2">Nombres2"</string>
+    <string name="nombres2">Nombres</string>
     <string name="BotonEnviar">liquidar</string>
     <string name="apellidos">apellidos</string>
     <string name="apellidos2">apellidos</string>

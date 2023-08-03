@@ -6,7 +6,6 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity3 extends AppCompatActivity {
@@ -20,6 +19,12 @@ public class MainActivity3 extends AppCompatActivity {
     private TextView Sub_total;
 
     private TextView Valor_dia;
+    private TextView salud_v ;
+    private TextView descuento_v ;
+    private TextView pension_v ;
+
+
+
 
 
 
@@ -34,8 +39,11 @@ public class MainActivity3 extends AppCompatActivity {
         Carg2 = (TextView)findViewById(R.id.Carg2);
         Sueldo2 = (TextView)findViewById(R.id.Sueldo2);
         Diaslb2 = (TextView)findViewById(R.id.Diaslb2);
-        Sub_total = (TextView)findViewById(R.id.Subtotal);
+        Sub_total = (TextView)findViewById(R.id.subtotal);
         Valor_dia = (TextView) findViewById(R.id.ValorDia);
+        salud_v = (TextView) findViewById(R.id.saludvista);
+        descuento_v = (TextView) findViewById(R.id.DescuentoVIista);
+        pension_v = (TextView) findViewById(R.id.pensionvista);
 
 
         String Nombres = getIntent().getStringExtra("Nombres");
@@ -58,6 +66,16 @@ public class MainActivity3 extends AppCompatActivity {
 
         double valor_dias = getIntent().getDoubleExtra("salario_bruto", 0.0);
         Valor_dia.setText(String.valueOf("Valor dia: " + valor_dias));
+
+        double salud = getIntent().getDoubleExtra("salud", 0.0);
+        salud_v.setText(String.valueOf("Valor salud: " + salud));
+
+        double pension = getIntent().getDoubleExtra("pension", 0.0);
+        pension_v.setText(String.valueOf("Valor pension: " + pension));
+
+        double descuento = getIntent().getDoubleExtra("descuento", 0.0);
+        descuento_v.setText(String.valueOf("Valor descuento: " + descuento));
+
 
 
     }
